@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="arq-spa-base">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSGO HUE - Upgrade your skins</title>
+
+    <script src="app/assets/js/arq-spa-dependencias.js"></script>
+    <script src="app/assets/js/arq-spa-base.js"></script>
+    <script src="app/assets/js/dependencias.js"></script>
+    <script src="app/assets/config/appSettings.js"></script>
+
+
+
+    <link rel="stylesheet" href="app/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="app/assets/css/apl-base.css" />
+    <link rel="stylesheet" href="app/assets/css/style.css" />
+    <link rel="stylesheet" href="app/assets/css/apl-hue.css" />
+    <link rel="stylesheet" href="app/assets/css/apl.css" />
+</head>
+
+<header class="header-principal">
+    <h1 class="float-l">
+        <a href="index.html" title="Titulo do Site">CSGO HUE</a>
+    </h1>
+
+    <input type="checkbox" id="control-nav" />
+    <label for="control-nav" class="control-nav"></label>
+    <label for="control-nav" class="control-nav-close"></label>
+
+    <nav class="float-r">
+        <ul class="list-auto">
+            <li>
+                <a href="" ng-click="$root.mostrarModalCarregamento()" title="Chaves">CONTACT</a>
+            </li>
+            <li>
+                <a href="#History" title="Chiquinha">HISTORY</a>
+            </li>
+            <li>
+                <a href="#Profile" title="Seu Madruga">PROFILE</a>
+            </li>
+            <li>
+                <a href="#Logout" title="Quico">LOGOUT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main ui-view></main>
+</body>
+
+</html>

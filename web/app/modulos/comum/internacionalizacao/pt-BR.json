@@ -1,0 +1,17 @@
+{
+    "@Filtrar": "Filtrar",
+    "@ExibindoRegistros": "Exibindo Registros",
+    "@ExibirMais": "Exibir mais",
+    "@labelCanal": "Canal",
+    "@labelGrupo": "Grupo de Serviços",
+    "@labelServico": "Serviço",
+    "@canalSelecionado": "CANAL SELECIONADO",
+    "@grupoSelecionado": "GRUPO SELECIONADO",
+    "@servicoSelecionado": "SERVIÇO SELECIONADO",
+    "@labelPublico": "Público",
+    "@labelPrivado": "Privado",
+    "@labelHoraAPartir": "a partir de",
+    "@labelHoraAte":"até",
+    "@labelDescricaoGrid": "Descrição",
+    "@labelCodigoGrid": "Código"
+}

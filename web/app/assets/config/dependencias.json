@@ -1,0 +1,10 @@
+[
+    {
+        "idFluxo": "csgo-hue-inicio",
+        "dependencias": [
+            "csgo-hue.inicio",
+             "csgo-hue.comum"
+        ]
+    }
+
+]

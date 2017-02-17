@@ -1,0 +1,230 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #FFFFFF    ;
+  background: linear-gradient(to right, #000 , #000); 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  background-color: #FFFFFF;
+  width: 50%;
+  min-height: 100%;
+  height: 100%;
+  border:1px solid rgba(0,0,0,0.25);
+  padding: 20px;
+}
+
+.header-principal {
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  background: #262C3B;
+  z-index: 2;
+}
+
+.header-modal {
+    background: #fff;
+}
+
+.up-skins{
+    background-color: #262C3B;
+    float:left;
+    width: 50%;
+    min-height: 100%;
+    border:1px solid rgba(0,0,0,0.25);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo-conteudo{
+    width: 100%;
+    height: 100%;
+    border:1px solid rgba(0,0,0,0.25);
+    color: #ccc;
+    padding: 20px;
+}
+
+.deposito-skins{
+    background-color: #414858;
+    width: 100%;
+    height: 200px;
+    border:1px solid rgba(0,0,0,0.25);
+    padding: 20px;
+}
+
+.upgrade{
+    background-color: #ccc;
+    width: 350px;
+    height: 60px;
+    border:1px solid rgba(0,0,0,0.25);
+    border-radius: 10px;  
+    padding: 15px;
+}
+
+.teste{
+    width: 100%;
+}
+
+.botao{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+}
+
+.botao div label{
+    margin-left: 3px !important;
+}
+
+#inner {
+    display: table;
+    margin: 0 auto; 
+}
+
+.navigation{
+    font-size: 14px;
+    max-width: 450px;
+    overflow: hidden;
+    opacity: 1;
+    transform-origin: left center;
+    transition: opacity .35s cubic-bezier(.165, .84, .44, 1),max-width .5s cubic-bezier(.165, .84, .44, 1);
+}
+
+.logo{
+    box-sizing: content-box;
+    padding: 0 12px;
+    margin-left: - 12px;
+    width: 150px;
+    height: 57px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.inventory-label{
+    font-size: 30px;
+    color: #fff;    
+    margin-left: 10px;
+}
+
+.deposit-banner{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.deposit-button{
+    color: #fff !important;
+    background-color: #262C3B !important;
+}
+
+.group-inventory{
+    height:50px;
+    border:1px solid rgba(0,0,0,0.25);
+    border-radius: 10px;    
+    background-color: #414858;
+}
+
+.text-teste{
+    background-color: #262C3B !important;
+    border-radius: 10px !important;
+}
+
+.grid_items{
+    width: 94%;
+    height: 400px;
+    float: left;
+    position: relative;
+    max-height: 400px;
+    background-color: #414858 !important;
+    margin-top: 0 !important;
+    border-radius: 10px;
+    margin-left: 20px !important;
+}
+.grid_items .table{
+    width: 100%;
+    float: left;
+    position: relative;   
+}
+
+.grid_items div {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+    border:1px solid rgba(0,0,0,0.25);
+    color: #fff;
+    text-align: left;
+    border-bottom-width: 1px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+.table.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: transparent !important;
+}
+
+.table tbody tr td {
+    padding: 0 20px;
+    vertical-align: middle;
+    border:1px solid rgba(0,0,0,0.25);
+    line-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.skin-view {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border:5px solid rgba(0,0,0,0.25);
+}
+
+.border-item {
+  border-left: 5px solid #262C3B;
+  border-right: 5px solid #515662;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100% ;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 5px;
+  -moz-background-size: 100% 5px;
+  background-size: 100% 5px;
+  background-image: -webkit-linear-gradient(left, #262C3B 0%, #515662 100%), -webkit-linear-gradient(left, #262C3B 0%, #515662 100%);
+  background-image: -moz-linear-gradient(left, #262C3B 0%, #515662 100%), -moz-linear-gradient(left, #262C3B 0%, #515662 100%);
+  background-image: -o-linear-gradient(left, #262C3B 0%, #515662 100%), -o-linear-gradient(left, #262C3B 0%, #515662 100%);
+  background-image: linear-gradient(to right, #262C3B 0%, #515662 100%), linear-gradient(to right, #262C3B 0%, #515662 100%);
+}
+
+.top-to-bottom {
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(#ccc)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(black, #ccc) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(black, #ccc) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(black, #ccc) 1 100%;
+    border-image:
+      linear-gradient(to bottom, black, #ccc) 1 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+}

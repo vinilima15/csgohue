@@ -1,0 +1,79 @@
+<section>
+    <div class="container-fluid">
+        <div class="row margin-top-50">
+            <div class="col-xs-3">
+                <div ng-repeat="item in iniCtrl.listaTeste">
+                    <input type="text" class="text-teste" />
+                </div>
+            </div>
+            <div class="col-xs-6 up-skins">
+                <div class="logo-conteudo text-center">
+                    <div class="logo-img">
+                        <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+                    </div>
+                </div>
+                <div class="deposito-skins text-center margin-top-30">
+                    <div class="col-md-6 skin-view margin-left-20 border-item">
+                        <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+                    </div>
+                    <div class="col-md-6 skin-view margin-right-20 rgt border-item">
+                        <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+                    </div>
+                </div>
+                <div id="inner">
+                    <div class="upgrade text-center margin-top-30">
+                        UPGRADE
+                    </div>
+                </div>
+                <div class="btn-group margin-top-10 botao">
+                    <div id="inner">
+                        <label class="btn btn-default-grupo" ng-model="valorPorcentagem" uib-btn-radio="'1.5'">1.50x</label>
+                        <label class="btn btn-default-grupo" ng-model="valorPorcentagem" uib-btn-radio="'2'">2.00x</label>
+                        <label class="btn btn-default-grupo" ng-model="valorPorcentagem" uib-btn-radio="'4'">4.00x</label>
+                        <label class="btn btn-default-grupo" ng-model="valorPorcentagem" uib-btn-radio="'10'">10.00x</label>
+                        <label class="btn btn-default-grupo" ng-model="valorPorcentagem" uib-btn-radio="'20'">20.00x</label>
+                    </div>
+                </div>
+                <div class="deposit-banner margin-top-30">
+                    <div class="group-inventory">
+                        <label class="float-l inventory-label margin-top-10">INVENTORY</label>
+
+                        <div class="btn-group margin-top-10 rgt margin-right-10">
+                            <label class="btn btn-default-grupo deposit-button" ng-model="valorPorcentagem" ng-click="iniCtrl.teste()">DEPOSIT</label>
+                            <label class="btn btn-default-grupo" ng-model="valorPorcentagem">WITHDRAW</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_items margin-15">
+                    <div class="col-sm-6" ng-repeat="row in iniCtrl.lista">
+                        <p>{{row.descricao}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div ng-repeat="item in iniCtrl.listaTeste">
+                    <input type="text" class="text-teste" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<table class="table table-striped" infinite-scroll="iniCtrl.exibirMais()" infinite-scroll-container="'.grid_items'">
+    <colgroup ng-show="iniCtrl.lista.length > 0">
+        <col width="30%"></col>
+        <col width="40%"></col>
+    </colgroup>
+    <tr ng-repeat="row in iniCtrl.lista">
+        <td>{{row.codigo}}</td>
+        <td>{{row.descricao}}</td>
+        <td>
+            <ol class="funcoes">
+                <li><img src="app/assets/img/icon-buscar-gold.png" ng-click="svcCtrl.detalharServico(row)" class="icon" /></li>
+                <li class="divider"></li>
+                <li><img src="app/assets/img/icon-edit-gold.png" class="icon" ng-click="svcCtrl.editar(row)" /></li>
+                <li class="divider"></li>
+                <li><img src="app/assets/img/icon-remover-dark.png" class="icon" ng-click="svcCtrl.excluir(row)" /></li>
+            </ol>
+        </td>
+    </tr>
+</table>-->

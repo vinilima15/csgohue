@@ -1,0 +1,469 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.breadcrumb {
+    margin:8px 0; 
+    padding: 8px 0;
+}
+.page{
+    background-color: #FFFFFF;
+    float:left;
+    width: 50%;
+    min-height: 100%;
+    height: 100%;
+    border:1px solid rgba(0,0,0,0.25);
+    padding: 20px;
+}
+ol.funcoes{
+    float: right;
+    margin-bottom: 0px;
+}
+ol.funcoes li{
+    list-style: none;
+    float: left;
+}
+.icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.icon.icon-black-close {
+  background-image: url('../img/icon-black-close.png');
+}
+.icon-search-modal-cgs{
+  background-image: url('../img/icon-buscar-gold.png');
+}
+.btn-search{
+    height: 42px;
+    padding: 0;
+    width: 42px;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 4px;
+    min-width: 5px;
+}
+.btn-default-grupo {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  width: 100px;
+}
+.btn-default-grupo:active,
+.btn-default-grupo.active,
+.open > .dropdown-toggle.btn-default {
+  background-color:#262C3B;
+  color:#fff;
+  border-color: #adadad;
+}
+.modal .modal-header .modal-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #262C3B;
+}
+.line-buttons{
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: right;
+}
+.grid_mensagens{
+    width: 98%;
+    height: 400px;
+    float: left;
+    position: relative;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.grid_mensagens .table{
+    width: 100%;
+    float: left;
+    position: relative;   
+}
+
+.grid_mensagens .table tr th {
+    background-color: #ECEDEE;
+    color: #555;
+    font-weight: 700;
+    font-size: 11px;
+    border-left-color: transparent;
+    text-align: left;
+    border-bottom-width: 1px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.grid_mensagens_modal{
+    width: 96%;
+    height: 400px;
+    float: left;
+    position: relative;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.grid_mensagens_modal .table{
+    width: 100%;
+    float: left;
+    position: relative;   
+}
+#inicio hr{
+    margin: 5px 0;
+    border-top: 1px solid #DDD;
+}
+#inicio h2{
+    cursor: pointer;
+    font-weight: 600;
+    color: #1E2447;
+    margin: 15px 0 5px 0;
+}
+#inicio h3{
+    cursor: pointer;
+    font-size: 13px;
+    color: #afafaf;
+    font-weight: lighter;
+    margin: 5px 0;
+}
+#inicio p{
+    cursor: pointer;
+    color: #1E2447;
+}
+.periodo-log-auditoria input{
+    width: 150px;
+    text-align: center;
+}
+
+.sub-label-detalhe{
+    width: 100%;
+    float: left; 
+    padding: 5px;
+}
+
+.sub-label-detalhe label{
+    color: #999999;
+    font-size: 13px;
+    margin: 0px;
+    font-weight: bold;
+}
+.sub-label-detalhe p{
+    color: #333;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0;
+    word-wrap: break-word;
+}
+.checkbox > label {
+  padding: 0;
+  line-height: 14px;
+  font-size: 13px;
+  color: #1E2447;
+  font-weight: 600;
+}
+.checkbox > label::before {
+  content: ' ';
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: bottom;
+  transition: 0.3s ease;
+}
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: #182A53;
+  border-color: #182A53;
+  background-image: url('/app/assets/img/icon-check.png');
+  background-size: calc(16px - 2px);
+}
+
+.grupo-botoes {
+    display: inline-block;
+}
+
+.grupo-botoes > label {
+    padding: 0;
+    line-height: 14px;
+    font-size: 13px;
+    color: #1E2447;
+    font-weight: 600;
+    display: inline-block;
+}
+.tipo-servico{
+    height: 42px;
+    padding: 10px;
+}
+.combo-cgs span{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px;
+    color: #555;
+}
+ input[type="text"].autocomplete {
+    background-image: url('../img/azul/azul-seta-down.png');
+    background-position: 98%;
+    background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    border: 1px solid #ddd;
+    color: #666;
+    font-size: 13px;
+    padding: 20px 40px 5px 5px;
+    height: 55px;
+    line-height: 13px;
+    border-radius: 3px;
+    background-size: 35px auto;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+}
+input[type="text"].autocomplete:focus{
+    background-image: url('../img/azul/azul-fechar.png');
+}
+div[class^="combo"]{
+    width: 100%;
+    height: 285px;
+    overflow-x: auto;
+    float: left;
+    display: none;
+    background-color: white;
+    border:1px solid #ddd;     
+    z-index: 10;
+    position: absolute;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+}
+div[class^="combo"] .item-combo{
+    padding: 5px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+}
+div[class^="combo"] .item-combo:hover{
+    background-color: #1E2447;
+    color: white;
+}
+div[class^="combo"] .item-combo h2{
+    font-size: 15px;
+    margin: 5px;
+}
+div[class^="combo"] .item-combo p{
+    font-size: 12px;
+    margin: 5px;
+}
+.exibirCombo{
+    display: block !important; 
+}
+.btn-link {
+    color: #C1A566;
+}
+.btn-icon.btn-close {
+    min-width: 16px;
+    min-height: 16px;
+    margin: 6px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    float: right;
+    margin-top: 5px;
+}
+.seletorHorario input{
+    background-color: #fff !important;
+}
+.labelSeletorHorario{
+    width: 80px;
+    float: left;
+    text-align: left;
+    position: relative;
+    height: 106px;
+}
+.labelSeletorHorario label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.divDetalheAuditoria{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #DDD;
+}
+
+.btn-default-grupo {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  border-radius: 10px;  
+  float: none !important;
+}
+.btn-default-grupo:focus,
+.btn-default-grupo.focus {
+  background-color:#262C3B;
+    color:#fff;
+  border-color: #adadad;
+}
+.btn-default-grupo:hover {
+  background-color:#262C3B;
+    color:#fff;
+  border-color: #adadad;
+}
+.btn-default-grupo:active,
+.btn-default-grupo.active,
+.open > .dropdown-toggle.btn-default {
+  background-color:#262C3B;
+    color:#fff;
+  border-color: #adadad;
+}
+div.loader-backdrop {
+    display: table;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%; 
+    height: 100%;
+    top:0px;
+    left:0px;
+    position:fixed;
+    z-index:9999;
+}
+div.loader-conteiner {
+    display:table-cell;
+    vertical-align:middle;
+}
+p.loader-paragrafo {
+    text-align:center;
+    color:#FFF;
+    margin-top:90px;
+}
+.divider{
+    height: 30px;
+    margin: 0 9px;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-style: dotted;
+}
+.selecionado{
+    background-color: #bdbdbd !important;
+}
+table tr.active {background: #ccc;}
+
+.alinhar-numeros-grid {
+    text-align: right !important;
+}
+
+.selecionar-horario {
+    float: left;
+}
+
+.separador-horario {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+
+.lista-horario{
+    list-style-type: none;
+    padding: 0;
+}
+/********************************************* Espaçamento padrão *********************************************/
+.margin-top-5{ margin-top:5px; }
+.margin-top-10{ margin-top:10px; }
+.margin-top-15{ margin-top:15px; }
+.margin-top-20{ margin-top:20px; }
+.margin-top-25{ margin-top:25px; }
+.margin-top-30{ margin-top:30px; }
+.margin-top-35{ margin-top:35px; }
+.margin-top-40{ margin-top:40px; }
+.margin-top-45{ margin-top:45px; }
+.margin-top-50{ margin-top:50px; }
+
+.margin-bottom-5{ margin-bottom:5px; }
+.margin-bottom-10{ margin-bottom:10px; }
+.margin-bottom-15{ margin-bottom:15px; }
+.margin-bottom-20{ margin-bottom:20px; }
+.margin-bottom-25{ margin-bottom:25px; }
+.margin-bottom-30{ margin-bottom:30px; }
+.margin-bottom-35{ margin-bottom:35px; }
+.margin-bottom-40{ margin-bottom:40px; }
+.margin-bottom-45{ margin-bottom:45px; }
+.margin-bottom-50{ margin-bottom:50px; }
+
+.margin-left-5{ margin-left:5px; }
+.margin-left-10{ margin-left:10px; }
+.margin-left-15{ margin-left:15px; }
+.margin-left-20{ margin-left:20px; }
+.margin-left-25{ margin-left:25px; }
+.margin-left-30{ margin-left:30px; }
+.margin-left-35{ margin-left:35px; }
+.margin-left-40{ margin-left:40px; }
+.margin-left-45{ margin-left:45px; }
+.margin-left-50{ margin-left:50px; }
+
+.margin-right-5{ margin-right:5px; }
+.margin-right-10{ margin-right:10px; }
+.margin-right-15{ margin-right:15px; }
+.margin-right-20{ margin-right:20px; }
+.margin-right-25{ margin-right:25px; }
+.margin-right-30{ margin-right:30px; }
+.margin-right-35{ margin-right:35px; }
+.margin-right-40{ margin-right:40px; }
+.margin-right-45{ margin-right:45px; }
+.margin-right-50{ margin-right:50px; }
+
+.margin-0{ margin: 0px }
+.margin-5{ margin: 5px }
+.margin-10{ margin: 10px }
+.margin-15{ margin: 15px }
+.margin-20{ margin: 20px }
+.margin-25{ margin: 25px }
+.margin-30{ margin: 30px }
+.margin-35{ margin: 35px }
+.margin-40{ margin: 40px }
+.margin-45{ margin: 45px }
+.margin-50{ margin: 50px }
+
+.padding-0{ padding: 0px }
+.padding-5{ padding: 5px }
+.padding-10{ padding: 10px }
+.padding-15{ padding: 15px }
+.padding-20{ padding: 20px }
+.padding-25{ padding: 25px }
+.padding-30{ padding: 30px }
+.padding-35{ padding: 35px }
+.padding-40{ padding: 40px }
+.padding-45{ padding: 45px }
+.padding-50{ padding: 50px }
+
+.rgt{
+	float: right;	
+}
+.lft{
+	float: left;	
+}
+
+.toUpperCase{
+    text-transform: uppercase;
+}
+.toLowerCase{
+    text-transform: lowercase;
+}
+.firstLetterUpper:first-letter{
+    text-transform: uppercase;
+}
+.toCaptalize{
+    text-transform: capitalize;
+}
+
+/********************************************* Espaçamento padrão *********************************************/
+

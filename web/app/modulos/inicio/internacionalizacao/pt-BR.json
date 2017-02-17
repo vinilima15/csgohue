@@ -1,0 +1,16 @@
+{
+    "@titleParametrizacao": "PARAMETRIZAÇÃO DE EXECUÇÃO",
+    "@parametrizacaoServicos": "SERVIÇOS",
+    "@consultarServicos": "Consultar Serviços",
+    "@incluirServicos": "Incluir Serviços",
+    "@parametrizacaoMensagens": "MENSAGENS",
+    "@consultarMensagens": "Consultar Mensagens",
+    "@incluirMensagens": "Incluir Mensagens",
+    "@titleConsultaLogs": "CONSULTA LOGS",
+    "@consultaLogsAuditoria": "LOG DE AUDITORIA",
+    "@consultarLogAud": "Consultar Log de Auditoria",
+    "@consultaLogRastreabilidade": "LOG DE RASTREABILIDADE",
+    "@consultarLogRast": "Consultar Log de Rastreabilidade",
+    "@consultaLogOcorrencia": "LOG DE OCORRÊNCIA",
+    "@consultarLogOco": "Consultar Log de Ocorrência"
+}

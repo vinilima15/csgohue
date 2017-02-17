@@ -1,0 +1,19 @@
+<header class="modal-header">
+    <button class="btn btn-close btn-icon" ng-click="ocultarModalCarregamento()">
+        <i class="icon icon-black-close"></i>
+    </button>
+    <h2 class="modal-title">CONTACT INFO</h2>
+</header>
+<div class="modal-body smooth-grid">
+    
+</div>
+<div class="row">
+    <div class="grid_mensagens_modal margin-20">
+        <table ng-table="vm.ParametrosGrid" class="table table-striped" template-pagination=".\app\modulos\comum\templates\paginacaoTmpl.html">
+            <tr ng-repeat="row in $data" ng-class="{'selecionado':$index == vm.linhaSelecionada}" ng-click="vm.changeColor($index)">
+                <td data-title="'@labelCodigoGrid' | translate"><b>{{row.W014_TB_CD_CHAVE}}</b></td>
+                <td data-title="'@labelDescricaoGrid' | translate"><b>{{row.W014_TB_TXT_DESCR}}</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
