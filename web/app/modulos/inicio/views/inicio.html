@@ -6,22 +6,29 @@
                     <input type="text" class="text-teste" />
                 </div>
             </div>
-            <div class="col-xs-6 up-skins">
-                <div class="logo-conteudo text-center">
-                    <div class="logo-img">
-                        <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+            <div class="col-xs-9 up-skins">
+                <div id="inner">
+                    <div class="ui header hue text-center">UPGRADE
+                        <div>YOUR SKINS</div>
                     </div>
                 </div>
                 <div class="deposito-skins text-center margin-top-30">
-                    <div class="col-md-6 skin-view margin-left-20 border-item">
-                        <img class="square margin-top-10" src="./app/assets/img/no_image.png">
-                    </div>
-                    <div class="col-md-6 skin-view margin-right-20 rgt border-item">
-                        <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+                    <div id="inner">
+                        <div class="banner-skin">
+                            <div class="col-md-6 skin-view margin-left-20 margin-top-25 box">
+                                <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+                            </div>
+                            <div class="col-md-2 margin-top-25">
+                                >>>>
+                            </div>
+                            <div class="col-md-6 skin-view margin-right-20 margin-top-25 rgt margin-left-20 box">
+                                <img class="square margin-top-10" src="./app/assets/img/no_image.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="inner">
-                    <div class="upgrade text-center margin-top-30">
+                    <div class="upgrade text-center margin-top-30" ng-click="">
                         UPGRADE
                     </div>
                 </div>
@@ -34,27 +41,40 @@
                         <label class="btn btn-default-grupo" ng-model="valorPorcentagem" uib-btn-radio="'20'">20.00x</label>
                     </div>
                 </div>
+                <div class="chance-percent">
+                    <div id="inner">
+                        <div class="change text-center">
+                            <span class="margin-top-20">
+                            CHANCE:
+                            </span>
+                            <span ng-class="{'percent-green': valorPorcentagem == '1.5' || valorPorcentagem == '2', 'percent-yellow': valorPorcentagem == '4', 'percent-red': valorPorcentagem == '10' || valorPorcentagem == '20'}">
+                                {{ valorPorcentagem == '1.5' ? '50.0%' : valorPorcentagem == '2' ? '37.5%' : valorPorcentagem == '4' ? '18.7%' : valorPorcentagem
+                                == '10' ? '7.5%' : valorPorcentagem == '20' ? '3.75%' : '' }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
                 <div class="deposit-banner margin-top-30">
                     <div class="group-inventory">
                         <label class="float-l inventory-label margin-top-10">INVENTORY</label>
 
                         <div class="btn-group margin-top-10 rgt margin-right-10">
                             <label class="btn btn-default-grupo deposit-button" ng-model="valorPorcentagem" ng-click="iniCtrl.teste()">DEPOSIT</label>
-                            <label class="btn btn-default-grupo" ng-model="valorPorcentagem">WITHDRAW</label>
+                            <label class="btn btn-default-grupo withdraw-button" ng-model="valorPorcentagem">WITHDRAW</label>
                         </div>
                     </div>
                 </div>
-                <div class="grid_items margin-15">
+                <div class="grid_items margin-15" ng-show="iniCtrl.lista.length > 0">
                     <div class="col-sm-6" ng-repeat="row in iniCtrl.lista">
                         <p>{{row.descricao}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3">
-                <div ng-repeat="item in iniCtrl.listaTeste">
-                    <input type="text" class="text-teste" />
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="float-l" style="color: #FFF">
+            Copyright © 2017 CSGOHUE.com
         </div>
     </div>
 </section>

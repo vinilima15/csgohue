@@ -28,7 +28,7 @@
     <label for="control-nav" class="control-nav"></label>
     <label for="control-nav" class="control-nav-close"></label>
 
-    <nav class="float-r">
+    <nav class="float-r" ng-show="$root.logado">
         <ul class="list-auto">
             <li>
                 <a href="" ng-click="$root.mostrarModalCarregamento()" title="Chaves">CONTACT</a>
@@ -41,6 +41,15 @@
             </li>
             <li>
                 <a href="#Logout" title="Quico">LOGOUT</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="float-r" ng-show="!$root.logado">
+        <ul class="list-auto">
+            <li>
+                <a href="" title="Chaves">
+                    <img src="./app/assets/img/green.png">
+                </a>
             </li>
         </ul>
     </nav>
